@@ -5,7 +5,6 @@ import FormControlLabel from '@mui/material/FormControlLabel'
 import FormControl from '@mui/material/FormControl'
 import FormLabel from '@mui/material/FormLabel'
 import TextField from '@mui/material/TextField'
-import Grid from '@mui/material/Grid'
 import { makeStyles } from '@mui/styles'
 
 const styles = makeStyles({
@@ -33,9 +32,6 @@ function Demographics() {
               <FormControlLabel value="male" control={<Radio />} label="Male" />
             </RadioGroup>
           </FormControl>
-        </div>
-
-        <div>
           <TextField id="standard-basic" label="Age" variant="standard" />
         </div>
       </div>

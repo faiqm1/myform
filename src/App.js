@@ -8,8 +8,8 @@ import Container from '@mui/material/Container'
 import { styled } from '@mui/material/styles'
 import Paper from '@mui/material/Paper'
 import Box from '@mui/material/Box'
-import Demographics from '../src/form_components/Demographics'
-import Biomarkers from '../src/form_components/Biomarkers'
+import Demographics from './components/Demographics'
+import Biomarkers from './components/Biomarkers'
 
 const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body2,
