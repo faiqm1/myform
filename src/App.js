@@ -10,12 +10,13 @@ import Paper from '@mui/material/Paper'
 import Box from '@mui/material/Box'
 import Demographics from './components/Demographics'
 import Biomarkers from './components/Biomarkers'
+import Button from '@mui/material/Button'
 
 const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body2,
   padding: theme.spacing(1),
   marginTop: theme.spacing(3),
-  height: 150,
+  height: 165,
   textAlign: 'left',
   color: theme.palette.text.secondary,
   display: 'flex',
@@ -49,6 +50,7 @@ function App() {
             </Grid>
           </Grid>
         </Box>
+        <Button variant="outlined">Submit</Button>
       </Container>
     </React.Fragment>
   )

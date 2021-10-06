@@ -6,19 +6,19 @@ import FormControl from '@mui/material/FormControl'
 import FormLabel from '@mui/material/FormLabel'
 import TextField from '@mui/material/TextField'
 import { makeStyles } from '@mui/styles'
+import { Typography } from '@mui/material'
 
 const styles = makeStyles({
   flexContainer: {
     display: 'flex',
     justifyContent: 'space-between',
-    width: '650px',
   },
 })
 function Demographics() {
   const classes = styles()
   return (
     <div>
-      <h2>Demographics</h2>
+      <Typography variant="h5">Demographics</Typography>
       <div className={classes.flexContainer}>
         <div>
           <FormControl component="fieldset">
@@ -32,6 +32,8 @@ function Demographics() {
               <FormControlLabel value="male" control={<Radio />} label="Male" />
             </RadioGroup>
           </FormControl>
+        </div>
+        <div>
           <TextField id="standard-basic" label="Age" variant="standard" />
         </div>
       </div>
