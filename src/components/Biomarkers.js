@@ -1,5 +1,5 @@
 import React from 'react'
-import { Biomarkersstyles } from './Biomarkers.styles.js'
+import { Biomarkersstyles } from './Biomarkers.styles'
 import TextField from '@mui/material/TextField'
 import AdapterDateFns from '@mui/lab/AdapterDateFns'
 import LocalizationProvider from '@mui/lab/LocalizationProvider'
