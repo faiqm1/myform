@@ -5,10 +5,17 @@ import AdapterDateFns from '@mui/lab/AdapterDateFns'
 import LocalizationProvider from '@mui/lab/LocalizationProvider'
 import DateTimePicker from '@mui/lab/DateTimePicker'
 import { Typography } from '@mui/material'
+import Button from '@mui/material/Button'
 
 function Biomarkers() {
   const classes = Biomarkersstyles()
   const [value, setValue] = React.useState(new Date())
+  const [pct, setPct] = React.useState('PCR')
+
+  const handlePctChange = (e) => {
+    setPct(e.target.value)
+  }
+  console.log(pct)
 
   return (
     <React.Fragment>
@@ -24,7 +31,12 @@ function Biomarkers() {
 
             <tr className={classes.tableheadingspace}>
               <td>
-                <TextField id="standard-basic" label="PCT" variant="standard" />
+                <TextField
+                  id="standard-basic"
+                  label="PCT"
+                  variant="standard"
+                  onChange={handlePctChange}
+                />
               </td>
               <td>
                 <LocalizationProvider dateAdapter={AdapterDateFns}>
@@ -53,6 +65,7 @@ function Biomarkers() {
             </tr>
           </table>
         </div>
+        <Button variant="outlined">Submit</Button>
       </div>
     </React.Fragment>
   )
